@@ -1,0 +1,469 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  cursor: url(../img/cursor.svg) 2 2, pointer;
+}
+.wrapper .header {
+  background: url(../img/Mask\ Group.png) #7700a1;
+}
+.wrapper .header .header_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.wrapper .header .header_row .header_logo {
+  width: 257px;
+  height: 64px;
+}
+.wrapper .header .header_row .header_logo img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .header .header_row .header_navbar .nav_item {
+  color: #fff;
+  transition: all 0.5ms ease;
+}
+.wrapper .header .header_row .header_navbar .nav_item:hover {
+  color: orange;
+}
+.wrapper .header .header_row .header_navbar .nav_item:not(:last-child) {
+  margin-right: 52px;
+}
+.wrapper .header .header_row .select .select_launge {
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.5ms ease;
+}
+.wrapper .header .header_row .select .select_launge:hover {
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 5px;
+}
+.wrapper .header .header_row .select .login_Btn {
+  margin-left: 10px;
+  width: 238px;
+  height: 54px;
+  background-color: transparent;
+  border: 1px solid #ff9c00;
+  border-radius: 40px;
+  color: #ff9c00;
+  transition: all 0.3ms ease;
+}
+.wrapper .header .header_row .select .login_Btn:hover {
+  background-color: #ff9c00;
+  color: #fff;
+}
+.wrapper .header .header_midle .mid_title {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 97px;
+  color: #ffffff;
+  margin: 30px 0;
+}
+.wrapper .header .header_midle .Btn_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .header .header_midle .Btn_block .Btn_start {
+  width: 162.97px;
+  height: 71.02px;
+  background: #ff9c00;
+  border-radius: 37px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  transition: all 0.5ms ease;
+}
+.wrapper .header .header_midle .Btn_block .Btn_start:hover {
+  background-color: transparent;
+  border: 1px solid #ff9c00;
+  border-radius: 37px;
+}
+.wrapper .header .header_midle .Btn_block .Btn_play {
+  width: 162.97px;
+  height: 71.02px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  color: #ff9c00;
+}
+.wrapper .header .header_midle .Btn_block .Btn_play img {
+  width: 60px;
+  height: 60px;
+}
+.wrapper .header .header_midle .mid_NFT {
+  margin-top: 20px;
+  display: flex;
+}
+.wrapper .header .header_midle .mid_NFT .nft-img {
+  width: 640px;
+  height: 720px;
+}
+.wrapper .header .header_midle .mid_NFT .nft-img img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .header .header_midle .mid_NFT .price-img {
+  width: 400px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .header .header_midle .mid_NFT .price-img img {
+  transform: translate(280px, 72px);
+  width: 100%;
+  height: 100%;
+}
+.wrapper .header .header_midle .prew_users {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.wrapper .header .header_midle .prew_users .gamers_btn {
+  width: 197px;
+  height: 52px;
+  background: #ff9c00;
+  box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+  border-radius: 37px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  transition: all 0.5ms ease;
+}
+.wrapper .header .header_midle .prew_users .gamers_btn:hover {
+  background-color: transparent;
+  border: 1px solid #ff9c00;
+  border-radius: 37px;
+}
+.wrapper .header .header_midle .users_profile {
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+}
+.wrapper .header .header_midle .users_profile .user {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.wrapper .header .header_midle .users_profile .user p {
+  padding: 0 10px;
+  color: #fff;
+}
+.wrapper .header .header_midle .users_profile .user_2 {
+  display: flex;
+  align-items: center;
+}
+.wrapper .header .header_midle .users_profile .user_2 p {
+  padding: 0 10px;
+  color: #fff;
+}
+.wrapper .main {
+  flex: 1 1 auto;
+}
+.wrapper .main .main_row .main_brends {
+  background-image: url(../img/logo_bg.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .main .main_row .main_brends img {
+  padding: 20px;
+}
+.wrapper .main .main_row .main_brends img:not(:last-child) {
+  margin-right: 50px;
+}
+.wrapper .main .main_row .main_content {
+  background-color: #1d1d1d;
+  background-image: url(../img/Mask\ Group.png);
+}
+.wrapper .main .main_row .main_content .content_title {
+  padding: 80px 0;
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 97px;
+}
+.wrapper .main .main_row .main_content .carts_cantent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wrapper .main .main_row .main_content .carts_cantent .cart {
+  width: 390px;
+  height: 570px;
+  background-color: #303030;
+  padding: 40px;
+  transition: all 0.5ms ease;
+}
+.wrapper .main .main_row .main_content .carts_cantent .cart:not(:last-child) {
+  margin-right: 20px;
+}
+.wrapper .main .main_row .main_content .carts_cantent .cart:hover {
+  transform: translate(10px, -21px);
+  border: 10px solid #ff9c00;
+}
+.wrapper .main .main_row .main_content .carts_cantent .cart .cart_img {
+  width: 310px;
+  height: 340px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.wrapper .main .main_row .main_content .carts_cantent .cart .cart_img img {
+  height: 100%;
+  width: 100%;
+}
+.wrapper .main .main_row .main_content .carts_cantent .cart .cart_title {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 42px;
+}
+.wrapper .main .main_row .main_content .table_sum .sum_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+.wrapper .main .main_row .main_content .table_sum .sum_title h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 97px;
+  color: #fff;
+}
+.wrapper .main .main_row .main_content .table_sum .sum_title .sub_title {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #d0d0d0;
+}
+.wrapper .main .main_row .main_content .table_sum .sum_title .sub_title p:not(:last-child) {
+  margin-right: 30px;
+}
+.wrapper .main .main_row .main_content .table_sum .geme_table {
+  width: 100%;
+  background: rgba(50, 50, 50, 0.8);
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+}
+.wrapper .main .main_row .main_content .table_sum .geme_table .table_title .game_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #c9c9c9;
+}
+.wrapper .main .main_row .main_content .table_sum .geme_table .gemes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.wrapper .main .main_row .main_content .table_sum .geme_table .gemes h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 44px;
+  color: #ffffff;
+}
+.wrapper .main .main_row .main_content .table_sum .geme_table .gemes p {
+  padding: auto;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.wrapper .main .main_row .main_content .table_sum .geme_table .gemes .price {
+  padding-right: 200px;
+}
+.wrapper .footer {
+  background-color: #1d1d1d;
+}
+.wrapper .footer .footer_banner {
+  background-image: url(../img/footer_bg.svg);
+  height: 491px;
+  margin-top: 50px;
+}
+.wrapper .footer .footer_banner .invitation {
+  text-align: center;
+}
+.wrapper .footer .footer_banner .invitation h1 {
+  padding: 100px 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 97px;
+}
+.wrapper .footer .footer_banner .invitation .footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .footer .footer_banner .invitation .footer-btn .link_btn {
+  width: 319px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  transition: all 0.5ms ease;
+  color: #000000;
+  background: #ff9c00;
+  border-radius: 40px;
+}
+.wrapper .footer .footer_banner .invitation .footer-btn .link_btn img {
+  padding: 14px;
+}
+.wrapper .footer .footer_banner .invitation .footer-btn .link_btn:hover {
+  background-color: transparent;
+  border: 1px solid #ff9c00;
+  border-radius: 37px;
+}
+.wrapper .footer .footer_banner .invitation .footer-btn .discort_link {
+  margin-right: 41px;
+}
+.wrapper .footer .footer_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.wrapper .footer .footer_ent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 50px;
+}
+.wrapper .footer .footer_ent .footer_navbar .nav_item {
+  color: #fff;
+  transition: all 0.5ms ease;
+}
+.wrapper .footer .footer_ent .footer_navbar .nav_item:hover {
+  color: #ff9c00;
+}
+.wrapper .footer .footer_ent .footer_navbar .nav_item:not(:last-child) {
+  margin-right: 20px;
+}
+.wrapper .footer .footer_ent .ent_icons img:not(:last-child) {
+  margin-right: 20px;
+}
+.wrapper .login_modal {
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgb(5, 255, 8);
+  background-image: url(../img/NFT2.jpg), url(../img/Mask\ Group.png);
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin: 0 auto;
+  position: absolute;
+  top: -100%;
+  left: -1px;
+  transition: all 0.3s ease;
+}
+.wrapper .login_modal.active {
+  top: 0;
+  padding: 50px;
+}
+.wrapper .login_modal .droptawn_menu {
+  margin: 0 auto;
+}
+.wrapper .login_modal .droptawn_menu .input_menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #f0b00b;
+}
+.wrapper .login_modal .droptawn_menu .input_menu .userr_name,
+.wrapper .login_modal .droptawn_menu .input_menu .userr_email,
+.wrapper .login_modal .droptawn_menu .input_menu .password_repeat,
+.wrapper .login_modal .droptawn_menu .input_menu .password {
+  padding-top: 55px;
+}
+.wrapper .login_modal .droptawn_menu .input_menu .save {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 25px;
+}
+.wrapper .login_modal .droptawn_menu .input_menu .save_btn {
+  width: 100.97px;
+  height: 50.02px;
+  background: #ff9c00;
+  border: 1px solid #ff9c00;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
